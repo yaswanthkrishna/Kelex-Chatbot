@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-english_word",
+      "2": "I-english_word",
+      "3": "L-english_word",
+      "4": "U-english_word",
+      "5": "B-language",
+      "6": "I-language",
+      "7": "L-language",
+      "8": "U-language",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-english_word": 1,
+      "I-english_word": 2,
+      "L-english_word": 3,
+      "U-english_word": 4,
+      "B-language": 5,
+      "I-language": 6,
+      "L-language": 7,
+      "U-language": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]
