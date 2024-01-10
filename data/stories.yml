@@ -1,0 +1,65 @@
+version: "3.1"
+
+stories:
+
+- story: basic greeting
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: saying goodbye
+  steps:
+  - intent: farewell
+  - action: utter_farewell
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: tell the time
+  steps:
+  - intent: ask_time
+  - action: action_tell_time
+
+- story: tell the date
+  steps:
+  - intent: ask_date
+  - action: action_tell_date
+
+- story: tell about special day
+  steps:
+  - intent: ask_special_day
+  - action: action_special_day
+
+- story: perform a calculation
+  steps:
+  - intent: perform_calculation
+  - action: action_perform_calculation
+
+- story: language learning path
+  steps:
+  - intent: learn_language
+  - action: action_teach_language

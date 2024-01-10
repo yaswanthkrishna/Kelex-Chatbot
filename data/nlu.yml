@@ -1,0 +1,202 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey there
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - greetings
+    - howdy
+    - hiya
+    - what's up
+    - hello hi
+    - good to see you
+    - hi there
+    - good day
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - farewell
+    - see you soon
+    - later
+    - bye for now
+    - catch you later
+    - I must be going
+    - take care
+    - sayonara
+    - I'm off
+    - until next time
+
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - that's correct
+    - definitely
+    - surely
+    - yep
+    - yeah
+    - that's right
+    - absolutely
+    - of course
+    - exactly
+    - you bet
+    - affirmative
+
+- intent: deny
+  examples: |
+    - no
+    - no way
+    - not at all
+    - certainly not
+    - I don't think so
+    - not really
+    - I disagree
+    - nope
+    - nah
+    - not in a million years
+    - never
+    - not possible
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - I'm doing great
+    - never been better
+    - I'm good
+    - feeling fantastic
+    - I'm very well
+    - in a great mood
+    - as happy as can be
+    - on cloud nine
+    - couldn't be better
+    - I'm on top of the world
+
+- intent: mood_unhappy
+  examples: |
+    - not feeling well
+    - kinda down
+    - not the best
+    - I've been better
+    - pretty bad
+    - not so great
+    - not very happy
+    - I'm down
+    - feeling blue
+    - not in a good mood
+    - a bit sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you even real?
+    - are you a human?
+    - you're a robot, aren't you?
+    - am I talking to a bot?
+    - you're not human, right?
+    - are you just a machine?
+    - are you alive?
+
+- intent: ask_time
+  examples: |
+    - what's the time?
+    - could you tell me the time, please?
+    - do you have the time?
+    - can you check the time?
+    - what time is it right now?
+    - time please?
+    - can you tell me what time it is?
+    - I need to know the time
+
+- intent: ask_date
+  examples: |
+    - what's the date today?
+    - can you tell me the date?
+    - what day is it today?
+    - today's date, please?
+    - date please?
+    - could you give me today's date?
+    - I need to know today's date
+
+- intent: ask_special_day
+  examples: |
+    - what's the holiday today?
+    - any special occasion today?
+    - is today a special day?
+    - are there any celebrations today?
+    - what's the significance of today?
+    - are we commemorating something today?
+    - is there something special about today?
+    - what holiday is it today?
+
+- intent: perform_calculation
+  examples: |
+    - can you do math?
+    - let's do some calculations
+    - I need to solve this math problem
+    - can you help me with math?
+    - I need a quick calculation
+    - please calculate this for me
+    - I need help with these numbers
+    - can you assist me with some math?
+
+- intent: learn_language
+  examples: |
+    - How do you say '[love](english_word)' in [French](language)?
+    - What is the [Spanish](language) word for '[happiness](english_word)'?
+    - Can you translate '[freedom](english_word)' into [Telugu](language)?
+    - I need '[peace](english_word)' in [Hindi](language), please.
+    - What's '[morning](english_word)' in [Spanish](language)?
+    - How to pronounce '[night](english_word)' in [French](language)?
+    - What does '[water](english_word)' mean in [Telugu](language)?
+    - How is '[friend](english_word)' said in [Hindi](language)?
+    - Translate '[world](english_word)' to [Spanish](language).
+    - Teach me how '[house](english_word)' is said in [French](language).
+    - How would I say '[star](english_word)' in [Telugu](language)?
+    - What's '[sky](english_word)' in [Spanish](language)?
+    - How can I say '[river](english_word)' in [French](language)?
+    - What is '[book](english_word)' in [Hindi](language)?
+    - Could you help me with '[food](english_word)' in [Spanish](language)?
+    - How do I speak '[mountain](english_word)' in [Telugu](language)?
+    - What's the [French](language) term for '[smile](english_word)'?
+    - How to say '[ocean](english_word)' in [Spanish](language)?
+    - I want to learn '[sun](english_word)' in [French](language).
+    - How do I pronounce '[tree](english_word)' in [Hindi](language)?
+    - Can you show me '[flower](english_word)' in [Telugu](language)?
+    - I'd like '[dance](english_word)' in [Spanish](language), please.
+    - How do you write '[music](english_word)' in [French](language)?
+    - What is '[cat](english_word)' in [Hindi](language)?
+    - Tell me how to say '[dog](english_word)' in [Telugu](language).
+    - How would '[laughter](english_word)' go in [Spanish](language)?
+    - Can I get '[joy](english_word)' in [French](language)?
+    - Teach '[sadness](english_word)' in [Hindi](language).
+    - I need the translation for '[strength](english_word)' in [Telugu](language).
+    - Show me '[beauty](english_word)' in [Spanish](language).
+    - I'm looking for '[courage](english_word)' in [French](language).
+    - How about '[victory](english_word)' in [Hindi](language)?
+    - What's the [Telugu](language) for '[defeat](english_word)'?
+    - Can you give me '[sympathy](english_word)' in [Spanish](language)?
+    - I'm curious about '[patience](english_word)' in [French](language).
+    - What's '[wisdom](english_word)' in [Hindi](language)?
+    - How do I say '[moon](english_word)' in [Telugu](language)?
+    - What's '[earth](english_word)' in [Spanish](language)?
+    - How to say '[sea](english_word)' in [French](language)?
+    - What is '[wind](english_word)' in [Hindi](language)?
+    - I'd like to know how to say '[fire](english_word)' in [Telugu](language).
+    - Can you tell me '[rain](english_word)' in [Spanish](language)?
+    - What does '[snow](english_word)' mean in [French](language)?
+    - How is '[cloud](english_word)' said in [Hindi](language)?
+    - I want to learn the word for '[storm](english_word)' in [Telugu](language).
